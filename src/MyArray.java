@@ -9,7 +9,7 @@ public class MyArray {
         System.out.println("even values in array using (for each)");
         for (int a:rollNO){
             if(a%2==0){
-//                System.out.println(a);
+                System.out.println("======"+a);
                 count = count + 1;
                 sum = sum + a;
             }
