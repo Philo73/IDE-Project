@@ -8,9 +8,11 @@ public class LeapYear2 {
         Scanner objSc = new Scanner(System.in);
         System.out.print("enter Year : ");
         year= objSc.nextInt();
+//        leapcheck(year);
         System.out.println(leapcheck(year)?"Leap year..!!":"not Leap year..!!");
     }
     public static boolean leapcheck(int year_pera){
-       return ((year_pera%4==0)&& (year_pera%100!=0) || year_pera%400 ==0);
+        boolean a = ((year_pera%4==0)&& (year_pera%100!=0) || year_pera%400 ==0);
+       return a;
     }
 }

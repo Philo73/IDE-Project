@@ -11,9 +11,10 @@ public class SumOfEven {
         Scanner objsc= new Scanner(System.in);
         System.out.println("Enter number to find sum of even numbers : " );
         number = objsc.nextInt();
-        sumEven();
+        int a = sumEven();
+        System.out.println("value of method"+a);
     }
-    public static void sumEven(){
+    public static int sumEven(){
         for(;i<=number;i++){
 
             if(i%2==0){
@@ -24,5 +25,6 @@ public class SumOfEven {
         }
         System.out.println("Sum of even numbers: "+sumOfEven);
         System.out.println("number of even numbers: "+count);
+        return count;
     }
 }
